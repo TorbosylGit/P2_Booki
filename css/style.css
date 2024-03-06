@@ -169,6 +169,7 @@ a {
 
 .card img {
   object-fit: cover;
+  object-position: center;
 }
 
 .card-title {
@@ -248,6 +249,8 @@ a {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 105px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Afficher plus */
@@ -276,6 +279,8 @@ p > a {
   height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .populaires-cards .card-content {
@@ -346,6 +351,8 @@ p > a {
 .activites-cards img {
   width: auto;
   height: 20rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .activites-cards .card-title {
