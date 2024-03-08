@@ -188,19 +188,19 @@ a {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
-  /* padding: 0; */
   padding: 2rem 0rem 2rem 0rem;
 }
 
 .hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 2rem;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 /****** Hebergements ***********/
 .hebergements {
+  background-color: var(--main-bg-color);
   width: 65%;
   /* border: 1px solid red; */
 }
@@ -215,7 +215,8 @@ a {
 .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between; /* *** */
+  gap: 2rem;
 }
 
 .hebergements-cards a {
@@ -261,6 +262,7 @@ p > a {
 /****** Populaires ***********/
 .populaires {
   width: 32%;
+  background-color: var(--main-bg-color);
 }
 
 .populaires-title {
@@ -341,10 +343,7 @@ p > a {
   display: flex;
   flex-direction: column;
   height: 23rem;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -405,7 +404,7 @@ footer a {
 
   .populaires-cards {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
   }
 
@@ -424,5 +423,74 @@ footer a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  /* search-form */
+  .search-form input {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .search-form .search-text {
+    display: none;
+  }
+
+  .fa-s fa-mfa-magnifying-glass {
+    color: red;
+  }
+
+  /* Main */
+  .main-container {
+    padding: 1rem;
+  }
+
+  .hebergements-and-populaires section {
+    border-radius: 0;
+  }
+
+  /* Hébergements */
+  .hebergements {
+    background-color: #fff;
+    order: 1;
+  }
+
+  .hebergements-cards a {
+    width: 100%;
+  }
+
+  /* Populaires */
+  .populaires {
+    order: 0;
+    margin-top: 0;
+  }
+  .populaires-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
+
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
+}
+
+/* Activités */
+
+.activites-cards .card-title {
+  font-size: 14px;
+}
+
+/* footer */
+footer {
+  gap: 2rem;
+}
+
+footer div {
+  /* border: 1px solid red; */
 }
