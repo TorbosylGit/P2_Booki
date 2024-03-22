@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booki</title>
+    <title>Booki - trouvez votre hébergement pour des vacances de rêve</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,70 +17,77 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
   </head>
-
   <body>
     <div class="main-container">
       <header>
         <div class="logo">
-          <a href="#">
-            <img src="./images/logo/Booki.png" alt="Logo de Booki" />
-          </a>
+          <a href="#"><img src="./images/logo/Booki.png" alt="Logo Booki" /></a>
         </div>
         <nav>
-          <button>Hébergements</button>
-          <button>Activités</button>
+          <div class="lien-section">
+            <div class="lien"><a href="#hebergements">Hébergements</a></div>
+            <div class="lien"><a href="#activites">Activités</a></div>
+          </div>
         </nav>
       </header>
       <main>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-        <div class="search-form">
-          <i class="fa-s fa-solid fa-location-dot"></i>
-          <input placeholder="Marseille, France" />
-          <button>
-            <span class="search-text">Rechercher</span>
-            <!-- <i class="fa-s fa-solid fa-magnifying-glass"></i> -->
-          </button>
+        <div class="infogroup">
+          <div class="headline">
+            <div>
+              <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            </div>
+            <div>
+              <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+          </div>
+          <div class="search-bar">
+            <div class="search-form">
+              <i class="fa-s fa-solid fa-location-dot"></i>
+              <input placeholder="Marseille, France" />
+              <button>
+                <span class="search-text">Rechercher</span>
+                <span class="search-magnifying-glass"
+                  ><i class="fa-s fa-solid fa-magnifying-glass"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="filter-bar">
+            <h3>Filtres</h3>
+            <div>
+              <a href="#">
+                <i class="fas fa-solid fa-money-bill-wave"></i>
+                <span>Économique</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <i class="fas fa-solid fa-child"></i>
+                <span>Familial</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <i class="fas fa-solid fa-heart"></i>
+                <span>Romantique</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <i class="fas fa-solid fa-fire"></i>
+                <span>Nos pépites</span>
+              </a>
+            </div>
+          </div>
+          <div class="info-bar">
+            <i class="fa-solid fa-info"></i>
+            <a>Plus de 500 logements sont disponibles dans cette ville</a>
+          </div>
         </div>
-        <!-- filtres -->
-        <div class="filters">
-          <h3>Filtres</h3>
-          <div class="fllter">
-            <a href="#">
-              <i class="fas fa-solid fa-money-bill-wave"></i>
-              <span>Économique</span>
-            </a>
-          </div>
-          <div class="fllter">
-            <a href="#">
-              <i class="fas fa-solid fa-child"></i>
-              <span>Familial</span>
-            </a>
-          </div>
-          <div class="fllter">
-            <a href="#">
-              <i class="fas fa-solid fa-heart"></i>
-              <span>Romantique</span>
-            </a>
-          </div>
-          <div class="fllter">
-            <a href="#">
-              <i class="fas fa-solid fa-dog"></i>
-              <span>Nos pépites</span>
-            </a>
-          </div>
-        </div>
-        <!-- /filtres -->
-        <!-- infobar -->
-        <div class="infobar">
-          <i class="fa-solid fa-circle-info"></i>
-          <a>Plus de 500 logements sont disponibles dans cette ville</a>
-        </div>
-        <!-- /infobar -->
         <div class="hebergements-and-populaires">
-          <section class="hebergements">
+          <section class="hebergements" id="hebergements">
             <div class="hebergements-title">
               <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
@@ -250,7 +257,7 @@
               <p><a href="#">Afficher plus</a></p>
             </div>
           </section>
-          <section class="populaires">
+          <section class="populaires" id="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -343,9 +350,9 @@
           </section>
         </div>
         <!-- activites -->
-        <div class="activites">
+        <div class="activites" id="activites">
           <section class="activites-section">
-            <div class="activites-section-title">
+            <div class="activites-title">
               <h2 class="section-title">Activités à Marseille</h2>
             </div>
             <div class="activites-cards">
@@ -404,10 +411,8 @@
             </div>
           </section>
         </div>
-        <!-- /activites -->
       </main>
       <footer>
-        <!-- Contenu du footer -->
         <div>
           <h3>À propos</h3>
           <a href="#">
@@ -426,7 +431,6 @@
           <a href="#"><p>Centre d'aide</p></a>
           <a href="#"><p>Nous contacter</p></a>
         </div>
-        <!-- /footer -->
       </footer>
     </div>
   </body>
