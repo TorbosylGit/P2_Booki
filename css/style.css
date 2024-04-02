@@ -404,7 +404,6 @@ footer p {
 @media (max-width: 1024px) {
   nav a:hover {
     color: var(--main-color);
-    border-top: 2px solid var(--main-color);
   }
 
   span {
